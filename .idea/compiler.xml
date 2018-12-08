@@ -10,6 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mitarbeiterverwaltung" target="1.8" />
       <module name="nvs-assignment06" target="1.5" />
     </bytecodeTargetLevel>
   </component>

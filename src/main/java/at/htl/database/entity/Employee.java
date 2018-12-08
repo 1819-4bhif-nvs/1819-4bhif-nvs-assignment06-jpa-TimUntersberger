@@ -9,16 +9,11 @@ import java.util.List;
 
 @Entity
 @NamedQuery(name = "Employee.findAll", query = "select e from Employee e")
-public class Employee implements IEmployee {
+public class Employee extends Person implements IEmployee {
     @Id
     @SequenceGenerator(name = "employee_seq", sequenceName = "employee_seq")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "employee_seq")
     private Long id;
-    private String firstName;
-    private String lastName;
-    @Convert(converter = LocalDateConverter.class)
-    private LocalDate birthday;
-    private Float salary;
     @ManyToOne
     private Team team;
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "employee")
