@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="mitarbeiterverwaltung:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="48589e88-a2de-4087-85b6-1cce79d89830" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MitarbeiterVerwaltungIT/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MitarbeiterVerwaltungIT/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MitarbeiterVerwaltungIT/src/test/java/at/htl/rest/endpoint/DeveloperEndpointIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/mitarbeiterverwaltung_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/mitarbeiterverwaltung_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_javaee_web_api_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/ERD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/cld.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../info.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mitarbeiterverwaltung.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/converter/LocalDateConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/dao/AbstractCrudDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/dao/EmployeeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/dao/ICrudDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/dao/ProjectDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/dao/TeamDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/dao/VacationDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/entity/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/entity/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/entity/Project.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/entity/Team.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/entity/Vacation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/entity/contract/IEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/entity/contract/IEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/entity/contract/IProject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/entity/contract/ITeam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/database/entity/contract/IVacation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/RestConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/adapter/LocalDateAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/dto/EmployeeDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/dto/ProjectDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/dto/TeamDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/dto/VacationDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/dto/converter/AbstractDtoConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/dto/converter/EmployeeDtoConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/dto/converter/ProjectDtoConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/dto/converter/TeamDtoConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/dto/converter/VacationDtoConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/endpoint/AbstractCrudEndpoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/endpoint/EmployeeEndpoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/endpoint/ProjectEndpoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/endpoint/TeamEndpoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/at/htl/rest/endpoint/VacationEndpoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Derby" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Derby" type="feb32156:DbDataSourceImpl" />
+        <item name="APP: schema" type="12aa88c4:DerbyImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/dao/AbstractCrudDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/rest/endpoint/DeveloperEndpoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/Developer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/at.htl.database.entity">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>at.htl.database.entity</OriginalElement>
+              <nodes>
+                <node x="78.0" y="281.0">at.htl.database.entity.Team</node>
+                <node x="0.0" y="47.0">at.htl.database.entity.Product</node>
+                <node x="300.0" y="421.0">at.htl.database.entity.Developer</node>
+                <node x="279.0" y="126.0">at.htl.database.entity.BaseEntity</node>
+                <node x="460.0" y="0.0">at.htl.database.entity.Vacation</node>
+                <node x="265.0" y="0.0">at.htl.database.entity.ProductOwner</node>
+                <node x="377.0" y="219.0">at.htl.database.entity.Employee</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="at.htl.database.entity.Vacation" target="at.htl.database.entity.BaseEntity">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="at.htl.database.entity.Team" target="at.htl.database.entity.Developer">
+                  <point x="2.757302877261054" y="-4.171004776195762" />
+                  <point x="2.7573028772610684" y="-4.171004776195758" />
+                </edge>
+                <edge source="at.htl.database.entity.ProductOwner" target="at.htl.database.entity.Product">
+                  <point x="0.0" y="5.156529071041064" />
+                  <point x="0.0" y="5.156529071041035" />
+                </edge>
+                <edge source="at.htl.database.entity.Team" target="at.htl.database.entity.BaseEntity">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="at.htl.database.entity.Developer" target="at.htl.database.entity.Employee">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="at.htl.database.entity.Vacation" target="at.htl.database.entity.Employee">
+                  <point x="4.783369402144288" y="1.455808078913492" />
+                  <point x="4.783369402144288" y="1.4558080789134813" />
+                </edge>
+                <edge source="at.htl.database.entity.Team" target="at.htl.database.entity.Product">
+                  <point x="-4.791814549060007" y="1.427765151352574" />
+                  <point x="-4.791814549060007" y="1.4277651513525598" />
+                </edge>
+                <edge source="at.htl.database.entity.Employee" target="at.htl.database.entity.Vacation">
+                  <point x="-5.226441426161436" y="0.0" />
+                  <point x="-5.226441426161429" y="0.0" />
+                </edge>
+                <edge source="at.htl.database.entity.Developer" target="at.htl.database.entity.Team">
+                  <point x="-9.066831288709736" y="0.0" />
+                  <point x="0.0" y="5.993759619427152" />
+                </edge>
+                <edge source="at.htl.database.entity.ProductOwner" target="at.htl.database.entity.Employee">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="at.htl.database.entity.Product" target="at.htl.database.entity.BaseEntity">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="at.htl.database.entity.Product" target="at.htl.database.entity.Team">
+                  <point x="5.217230288034443" y="0.0" />
+                  <point x="5.217230288034443" y="0.0" />
+                </edge>
+                <edge source="at.htl.database.entity.Product" target="at.htl.database.entity.ProductOwner">
+                  <point x="-1.2225952262136843" y="-4.848222448778472" />
+                  <point x="-1.2225952262136985" y="-4.848222448778472" />
+                </edge>
+                <edge source="at.htl.database.entity.Employee" target="at.htl.database.entity.BaseEntity">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="40.5" y="-53.0" />
+              <SelectedNodes>
+                <node>at.htl.database.entity.Team</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="uml://Persistence/JavaeeElement:/bf053671/dbPU/mitarbeiterverwaltung/jpa/JPA/PersistenceModel">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>Persistence</ID>
+              <OriginalElement>JavaeeElement:/bf053671/dbPU/mitarbeiterverwaltung/jpa/JPA/PersistenceModel</OriginalElement>
+              <nodes>
+                <node x="50.0" y="208.0">ProductOwner#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/ProductOwner.java</node>
+                <node x="62.0" y="0.0">Employee#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Employee.java</node>
+                <node x="4.0" y="279.0">Team#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Team.java</node>
+                <node x="250.0" y="72.0">Vacation#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Vacation.java</node>
+                <node x="200.0" y="187.0">BaseEntity#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/BaseEntity.java</node>
+                <node x="167.0" y="295.0">Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Product.java</node>
+                <node x="0.0" y="137.0">Developer#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Developer.java</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="Team#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Team.java" target="Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Product.java">
+                  <point x="0.16176588065698638" y="-4.4970914822644374" />
+                  <point x="0.1617658806569935" y="-4.4970914822644374" />
+                </edge>
+                <edge source="Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Product.java" target="Team#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Team.java">
+                  <point x="8.881784197001252E-16" y="4.502910398834814" />
+                  <point x="0.0" y="4.5029103988348425" />
+                </edge>
+                <edge source="ProductOwner#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/ProductOwner.java" target="Employee#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Employee.java">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="Team#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Team.java" target="BaseEntity#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/BaseEntity.java">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="Team#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Team.java" target="Developer#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Developer.java">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Product.java" target="BaseEntity#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/BaseEntity.java">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="Vacation#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Vacation.java" target="Employee#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Employee.java">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Product.java" target="ProductOwner#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/ProductOwner.java">
+                  <point x="-7.596051171109098" y="0.0" />
+                  <point x="-7.596051171109096" y="0.0" />
+                </edge>
+                <edge source="Developer#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Developer.java" target="Employee#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Employee.java">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="ProductOwner#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/ProductOwner.java" target="Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Product.java">
+                  <point x="3.2911837264979624" y="-3.7640549515695056" />
+                  <point x="3.291183726497966" y="-3.7640549515695056" />
+                </edge>
+                <edge source="Vacation#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Vacation.java" target="BaseEntity#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/BaseEntity.java">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="Employee#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Employee.java" target="BaseEntity#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/BaseEntity.java">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="192.0" y="252.0" />
+              <SelectedNodes>
+                <node>ProductOwner#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/ProductOwner.java</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Embeddables</Category>
+                <Category>Superclasses</Category>
+                <Category>Properties</Category>
+              </Categories>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/ProductOwner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/Team.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/Vacation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/entity/ProjectOwner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/rest/dto/ProjectOwnerDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/rest/dto/converter/ProjectOwnerConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/entity/contract/IProjectOwner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/entity/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/rest/endpoint/AbstractCrudEndpoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/entity/Entity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/dao/AbstractCrudDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/entity/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/rest/endpoint/DeveloperEndpoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/dao/DeveloperDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/dao/ProductDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/dao/ProductOwnerDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/dao/TeamDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/dao/VacationDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/entity/Vacation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/entity/ProductOwner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/entity/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/entity/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/entity/Developer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/database/entity/Team.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="255" />
+    <option name="y" value="-17" />
+    <option name="width" value="1401" />
+    <option name="height" value="1001" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MitarbeiterVerwaltung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MitarbeiterVerwaltung" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MitarbeiterVerwaltung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MitarbeiterVerwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MitarbeiterVerwaltung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MitarbeiterVerwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MitarbeiterVerwaltung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MitarbeiterVerwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MitarbeiterVerwaltung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MitarbeiterVerwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="htl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MitarbeiterVerwaltung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MitarbeiterVerwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="htl" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MitarbeiterVerwaltung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MitarbeiterVerwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="htl" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MitarbeiterVerwaltung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MitarbeiterVerwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="htl" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MitarbeiterVerwaltung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MitarbeiterVerwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="htl" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MitarbeiterVerwaltung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MitarbeiterVerwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MitarbeiterVerwaltung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MitarbeiterVerwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547999232392" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\School\1819-4bhif-nvs-assignment06-jpa-TimUntersberger\MitarbeiterVerwaltung\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="at.htl.database.dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\School\1819-4bhif-nvs-assignment06-jpa-TimUntersberger\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Wildfly" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 14.0.1.Final" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="mitarbeiterverwaltung:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="USERNAME" value="" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59905" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="mitarbeiterverwaltung:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48589e88-a2de-4087-85b6-1cce79d89830" name="Default Changelist" comment="" />
+      <created>1544285464039</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544285464039</updated>
+      <workItem from="1544285465253" duration="1343000" />
+      <workItem from="1547062809556" duration="1247000" />
+      <workItem from="1547153229431" duration="2860000" />
+      <workItem from="1547400068297" duration="25000" />
+      <workItem from="1547994762685" duration="144000" />
+      <workItem from="1547995175178" duration="3239000" />
+      <workItem from="1547998448249" duration="798000" />
+    </task>
+    <task id="LOCAL-00001" summary=".">
+      <created>1547063394630</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547063394630</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9656000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49729145" visible="true" weight="0.18976545" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Persistence" order="8" sideWeight="0.50270855" side_tool="true" visible="true" weight="0.18976545" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.77398723" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.31419286" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2260128" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32910052" />
+      <window_info anchor="bottom" id="Database Console" order="15" sideWeight="0.49840087" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="JSF" order="6" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.2153518" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="CDI" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496875" visible="true" weight="0.17760417" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Persistence" order="8" sideWeight="0.503125" side_tool="true" weight="0.18176973" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" visible="true" weight="0.2994709" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="JSF" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="CDI" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/rest/dto/ProjectOwnerDto.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/contract/IProjectOwner.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/rest/dto/converter/ProjectOwnerConverter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/ProjectOwner.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/Person.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/rest/dto/converter/EmployeeDtoConverter.java" />
+    <entry file="uml://JAVA/at.htl">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>at.htl</OriginalElement>
+          <nodes>
+            <node x="" y="">at.htl.rest.dto.ProjectDto</node>
+            <node x="" y="">at.htl.rest.endpoint.EmployeeEndpoint</node>
+            <node x="" y="">at.htl.rest.dto.EmployeeDto</node>
+            <node x="" y="">at.htl.database.converter.LocalDateConverter</node>
+            <node x="" y="">at.htl.database.entity.contract.IProject</node>
+            <node x="" y="">at.htl.rest.endpoint.ProjectEndpoint</node>
+            <node x="" y="">at.htl.rest.dto.converter.TeamDtoConverter</node>
+            <node x="" y="">at.htl.database.dao.EmployeeDao</node>
+            <node x="" y="">at.htl.rest.dto.converter.EmployeeDtoConverter</node>
+            <node x="" y="">at.htl.database.entity.Project</node>
+            <node x="" y="">at.htl.database.dao.ICrudDao</node>
+            <node x="" y="">at.htl.rest.dto.converter.AbstractDtoConverter</node>
+            <node x="" y="">at.htl.database.entity.contract.IEmployee</node>
+            <node x="" y="">at.htl.database.entity.contract.IEntity</node>
+            <node x="" y="">at.htl.database.entity.Team</node>
+            <node x="" y="">at.htl.rest.endpoint.AbstractCrudEndpoint</node>
+            <node x="" y="">at.htl.rest.dto.TeamDto</node>
+            <node x="" y="">at.htl.database.entity.contract.IVacation</node>
+            <node x="" y="">at.htl.rest.dto.converter.ProjectDtoConverter</node>
+            <node x="" y="">at.htl.rest.RestConfig</node>
+            <node x="" y="">at.htl.database.dao.VacationDao</node>
+            <node x="" y="">at.htl.database.entity.Employee</node>
+            <node x="" y="">at.htl.rest.dto.VacationDto</node>
+            <node x="" y="">at.htl.rest.dto.converter.VacationDtoConverter</node>
+            <node x="" y="">at.htl.database.dao.AbstractCrudDao</node>
+            <node x="" y="">at.htl.database.entity.contract.ITeam</node>
+            <node x="" y="">at.htl.rest.adapter.LocalDateAdapter</node>
+            <node x="" y="">at.htl.database.entity.Vacation</node>
+            <node x="" y="">at.htl.rest.endpoint.VacationEndpoint</node>
+            <node x="" y="">at.htl.rest.endpoint.TeamEndpoint</node>
+            <node x="" y="">at.htl.database.dao.ProjectDao</node>
+            <node x="" y="">at.htl.database.dao.TeamDao</node>
+            <node x="" y="">at.htl.database.entity.Person</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="603.0" y="423.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/rest/dto/EmployeeDto.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/Project.java" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/rest/adapter/LocalDateAdapter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/rest/RestConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Persistence/JavaeeElement:/d1d89dd0/dbPU/mitarbeiterverwaltung/jpa/JPA/PersistenceModel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Persistence</ID>
+          <OriginalElement>JavaeeElement:/d1d89dd0/dbPU/mitarbeiterverwaltung/jpa/JPA/PersistenceModel</OriginalElement>
+          <nodes>
+            <node x="" y="">Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/src/main/java/at/htl/database/entity/Product.java</node>
+            <node x="" y="">Team#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/src/main/java/at/htl/database/entity/Team.java</node>
+            <node x="" y="">Developer#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/src/main/java/at/htl/database/entity/Developer.java</node>
+            <node x="" y="">Vacation#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/src/main/java/at/htl/database/entity/Vacation.java</node>
+            <node x="" y="">ProductOwner#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/src/main/java/at/htl/database/entity/ProductOwner.java</node>
+            <node x="" y="">BaseEntity#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/src/main/java/at/htl/database/entity/BaseEntity.java</node>
+            <node x="" y="">Employee#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/src/main/java/at/htl/database/entity/Employee.java</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="131.0" y="359.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+            <Category>Embeddables</Category>
+            <Category>Superclasses</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/dao/ICrudDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitarbeiterverwaltung.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4a8cc27f-a9e4-43e2-ae1c-50f2b75c7cac/schema/APP/table/TEAM">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4a8cc27f-a9e4-43e2-ae1c-50f2b75c7cac/schema/APP/table/TEAM_EMPLOYEE">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4a8cc27f-a9e4-43e2-ae1c-50f2b75c7cac/schema/APP/table/EMPLOYEE">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/rest/endpoint/AbstractCrudEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/dao/DeveloperDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/dao/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/dao/ProductOwnerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/dao/TeamDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/dao/VacationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/dao/AbstractCrudDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/rest/endpoint/DeveloperEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/Vacation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/Developer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/database/entity/ProductOwner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/at.htl.database.entity">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>at.htl.database.entity</OriginalElement>
+          <nodes>
+            <node x="78.0" y="281.0">at.htl.database.entity.Team</node>
+            <node x="0.0" y="47.0">at.htl.database.entity.Product</node>
+            <node x="300.0" y="421.0">at.htl.database.entity.Developer</node>
+            <node x="279.0" y="126.0">at.htl.database.entity.BaseEntity</node>
+            <node x="460.0" y="0.0">at.htl.database.entity.Vacation</node>
+            <node x="265.0" y="0.0">at.htl.database.entity.ProductOwner</node>
+            <node x="377.0" y="219.0">at.htl.database.entity.Employee</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="at.htl.database.entity.Vacation" target="at.htl.database.entity.BaseEntity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="at.htl.database.entity.Team" target="at.htl.database.entity.Developer">
+              <point x="2.757302877261054" y="-4.171004776195762" />
+              <point x="2.7573028772610684" y="-4.171004776195758" />
+            </edge>
+            <edge source="at.htl.database.entity.ProductOwner" target="at.htl.database.entity.Product">
+              <point x="0.0" y="5.156529071041064" />
+              <point x="0.0" y="5.156529071041035" />
+            </edge>
+            <edge source="at.htl.database.entity.Team" target="at.htl.database.entity.BaseEntity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="at.htl.database.entity.Developer" target="at.htl.database.entity.Employee">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="at.htl.database.entity.Vacation" target="at.htl.database.entity.Employee">
+              <point x="4.783369402144288" y="1.455808078913492" />
+              <point x="4.783369402144288" y="1.4558080789134813" />
+            </edge>
+            <edge source="at.htl.database.entity.Team" target="at.htl.database.entity.Product">
+              <point x="-4.791814549060007" y="1.427765151352574" />
+              <point x="-4.791814549060007" y="1.4277651513525598" />
+            </edge>
+            <edge source="at.htl.database.entity.Employee" target="at.htl.database.entity.Vacation">
+              <point x="-5.226441426161436" y="0.0" />
+              <point x="-5.226441426161429" y="0.0" />
+            </edge>
+            <edge source="at.htl.database.entity.Developer" target="at.htl.database.entity.Team">
+              <point x="-9.066831288709736" y="0.0" />
+              <point x="0.0" y="5.993759619427152" />
+            </edge>
+            <edge source="at.htl.database.entity.ProductOwner" target="at.htl.database.entity.Employee">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="at.htl.database.entity.Product" target="at.htl.database.entity.BaseEntity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="at.htl.database.entity.Product" target="at.htl.database.entity.Team">
+              <point x="5.217230288034443" y="0.0" />
+              <point x="5.217230288034443" y="0.0" />
+            </edge>
+            <edge source="at.htl.database.entity.Product" target="at.htl.database.entity.ProductOwner">
+              <point x="-1.2225952262136843" y="-4.848222448778472" />
+              <point x="-1.2225952262136985" y="-4.848222448778472" />
+            </edge>
+            <edge source="at.htl.database.entity.Employee" target="at.htl.database.entity.BaseEntity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="40.5" y="-53.0" />
+          <SelectedNodes>
+            <node>at.htl.database.entity.Team</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Persistence/JavaeeElement:/bf053671/dbPU/mitarbeiterverwaltung/jpa/JPA/PersistenceModel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Persistence</ID>
+          <OriginalElement>JavaeeElement:/bf053671/dbPU/mitarbeiterverwaltung/jpa/JPA/PersistenceModel</OriginalElement>
+          <nodes>
+            <node x="50.0" y="208.0">ProductOwner#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/ProductOwner.java</node>
+            <node x="62.0" y="0.0">Employee#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Employee.java</node>
+            <node x="4.0" y="279.0">Team#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Team.java</node>
+            <node x="250.0" y="72.0">Vacation#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Vacation.java</node>
+            <node x="200.0" y="187.0">BaseEntity#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/BaseEntity.java</node>
+            <node x="167.0" y="295.0">Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Product.java</node>
+            <node x="0.0" y="137.0">Developer#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Developer.java</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Team#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Team.java" target="Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Product.java">
+              <point x="0.16176588065698638" y="-4.4970914822644374" />
+              <point x="0.1617658806569935" y="-4.4970914822644374" />
+            </edge>
+            <edge source="Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Product.java" target="Team#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Team.java">
+              <point x="8.881784197001252E-16" y="4.502910398834814" />
+              <point x="0.0" y="4.5029103988348425" />
+            </edge>
+            <edge source="ProductOwner#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/ProductOwner.java" target="Employee#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Employee.java">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Team#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Team.java" target="BaseEntity#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/BaseEntity.java">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Team#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Team.java" target="Developer#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Developer.java">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Product.java" target="BaseEntity#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/BaseEntity.java">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Vacation#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Vacation.java" target="Employee#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Employee.java">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Product.java" target="ProductOwner#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/ProductOwner.java">
+              <point x="-7.596051171109098" y="0.0" />
+              <point x="-7.596051171109096" y="0.0" />
+            </edge>
+            <edge source="Developer#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Developer.java" target="Employee#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Employee.java">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="ProductOwner#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/ProductOwner.java" target="Product#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Product.java">
+              <point x="3.2911837264979624" y="-3.7640549515695056" />
+              <point x="3.291183726497966" y="-3.7640549515695056" />
+            </edge>
+            <edge source="Vacation#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Vacation.java" target="BaseEntity#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/BaseEntity.java">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Employee#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/Employee.java" target="BaseEntity#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/BaseEntity.java">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="192.0" y="252.0" />
+          <SelectedNodes>
+            <node>ProductOwner#file://D:/School/1819-4bhif-nvs-assignment06-jpa-TimUntersberger/MitarbeiterVerwaltung/src/main/java/at/htl/database/entity/ProductOwner.java</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Embeddables</Category>
+            <Category>Superclasses</Category>
+            <Category>Properties</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>mitarbeiterverwaltung:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>mitarbeiterverwaltung</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: javax:javaee-web-api:8.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
