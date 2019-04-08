@@ -1,5 +1,7 @@
 package at.htl.database.entity;
 
+import javax.json.Json;
+import javax.json.JsonObject;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.function.Consumer;
@@ -26,5 +28,11 @@ public class BaseEntity {
     }
 
     public void update(BaseEntity changeset) {
+    }
+
+    public JsonObject serialize(){
+        return Json.createObjectBuilder()
+                .add("id", id)
+                .build();
     }
 }

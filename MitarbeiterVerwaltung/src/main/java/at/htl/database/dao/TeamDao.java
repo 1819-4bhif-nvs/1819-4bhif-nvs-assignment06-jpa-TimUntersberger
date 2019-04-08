@@ -1,16 +1,13 @@
 package at.htl.database.dao;
 
-import at.htl.database.entity.Developer;
 import at.htl.database.entity.Team;
 
 import javax.ejb.Stateless;
-import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.PersistenceUnit;
 
 @Stateless
-public class TeamDao extends AbstractCrudDao<Team>{
+public class TeamDao extends AbstractDao<Team> {
     @PersistenceContext
     EntityManager em;
 

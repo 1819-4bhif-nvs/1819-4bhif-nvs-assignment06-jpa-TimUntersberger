@@ -1,11 +1,15 @@
 package at.htl.database.entity;
 
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonValue;
 import javax.persistence.Entity;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 
 @Entity
 @NamedQuery(name="Product.findAll", query = "select x from Product x")
+@NamedQuery(name="Product.findById", query = "select x from Product x where x.id = :ID")
 public class Product extends BaseEntity{
     @OneToOne
     private Team team;
@@ -40,5 +44,13 @@ public class Product extends BaseEntity{
         super.update(changeset);
         setNonNull(this::setTeam, changeset::getTeam);
         setNonNull(this::setProductOwner, changeset::getProductOwner);
+    }
+
+    public JsonObject serialize(){
+        return Json.createObjectBuilder()
+                .add("id", getId())
+                .add("productOwner_id", productOwner == null? JsonValue.NULL : Json.createValue(productOwner.getId()))
+                .add("team_id", team == null? JsonValue.NULL : Json.createValue(team.getId()))
+                .build();
     }
 }

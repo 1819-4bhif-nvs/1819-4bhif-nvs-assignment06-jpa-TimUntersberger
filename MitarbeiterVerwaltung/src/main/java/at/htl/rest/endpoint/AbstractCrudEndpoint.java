@@ -4,6 +4,12 @@ package at.htl.rest.endpoint;
 import at.htl.database.dao.ICrudDao;
 import at.htl.database.entity.BaseEntity;
 
+import javax.annotation.PreDestroy;
+import javax.json.Json;
+import javax.json.JsonArray;
+import javax.json.JsonArrayBuilder;
+import javax.json.JsonObject;
+import javax.json.bind.serializer.JsonbSerializer;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -26,18 +32,23 @@ public abstract class AbstractCrudEndpoint<TEntity extends BaseEntity> {
     }
 
     @GET
-    public List<TEntity> read(){
-        return getDao()
-            .findAll()
-            .stream()
-            .collect(Collectors.toList());
+    public JsonArray read(){
+        JsonArrayBuilder jsonArrayBuilder = Json.createArrayBuilder();
 
+        getDao()
+                .findAll()
+                .stream()
+                .map(TEntity::serialize)
+                .forEach(jsonArrayBuilder::add);
+
+        return jsonArrayBuilder.build();
     }
 
     @GET
     @Path("{id}")
     public TEntity readById(@PathParam("id") Long id){
-        return getDao().findById(id);
+        TEntity entity = getDao().findById(id);
+        return entity;
     }
 
     @PATCH

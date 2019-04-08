@@ -1,5 +1,6 @@
 package at.htl.database.entity;
 
+import javax.json.bind.annotation.JsonbTransient;
 import javax.persistence.Entity;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
@@ -8,11 +9,13 @@ import java.util.List;
 
 @Entity
 @NamedQuery(name="Employee.findAll", query = "select x from Employee x")
+@NamedQuery(name="Employee.findById", query = "select x from Employee x where x.id = :ID")
 public class Employee extends BaseEntity {
     private String firstName;
     private String lastName;
     private Double salary;
     @OneToMany(mappedBy = "employee")
+    @JsonbTransient
     private List<Vacation> vacations;
 
     public Employee(String firstName, String lastName, Double salary, List<Vacation> vacations) {
@@ -63,4 +66,6 @@ public class Employee extends BaseEntity {
         setNonNull(this::setLastName, changeset::getLastName);
         setNonNull(this::setSalary, changeset::getSalary);
     }
+
+
 }
