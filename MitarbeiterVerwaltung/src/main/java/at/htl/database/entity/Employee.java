@@ -1,21 +1,19 @@
 package at.htl.database.entity;
 
-import javax.json.bind.annotation.JsonbTransient;
+import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
 import javax.persistence.Entity;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
-import java.time.LocalDate;
 import java.util.List;
 
 @Entity
 @NamedQuery(name="Employee.findAll", query = "select x from Employee x")
-@NamedQuery(name="Employee.findById", query = "select x from Employee x where x.id = :ID")
 public class Employee extends BaseEntity {
     private String firstName;
     private String lastName;
     private Double salary;
     @OneToMany(mappedBy = "employee")
-    @JsonbTransient
     private List<Vacation> vacations;
 
     public Employee(String firstName, String lastName, Double salary, List<Vacation> vacations) {
@@ -62,10 +60,19 @@ public class Employee extends BaseEntity {
 
     public void update(Employee changeset) {
         super.update(changeset);
-        setNonNull(this::setFirstName, changeset::getFirstName);
-        setNonNull(this::setLastName, changeset::getLastName);
-        setNonNull(this::setSalary, changeset::getSalary);
+        setIfPresent(this::setFirstName, changeset::getFirstName);
+        setIfPresent(this::setLastName, changeset::getLastName);
+        setIfPresent(this::setSalary, changeset::getSalary);
     }
 
+    public JsonObjectBuilder toJsonObjectBuilder(){
+        return super.toJsonObjectBuilder()
+                .add("firstName", firstName)
+                .add("lastName", lastName)
+                .add("salary", salary);
+    }
 
+    public JsonObject toJsonObject(){
+        return toJsonObjectBuilder().build();
+    }
 }

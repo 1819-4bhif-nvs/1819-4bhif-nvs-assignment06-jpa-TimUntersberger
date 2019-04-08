@@ -2,8 +2,10 @@ package at.htl.database.entity;
 
 import javax.json.Json;
 import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
@@ -20,19 +22,19 @@ public class BaseEntity {
         return id;
     }
 
-    protected <T> void setNonNull(Consumer<T> set, Supplier<T> get){
-        T value = get.get();
-        if(value != null){
-            set.accept(value);
-        }
+    protected <T> void setIfPresent(Consumer<T> set, Supplier<T> get){
+        Optional.of(get.get()).ifPresent(set::accept);
     }
 
     public void update(BaseEntity changeset) {
     }
 
-    public JsonObject serialize(){
+    public JsonObjectBuilder toJsonObjectBuilder(){
         return Json.createObjectBuilder()
-                .add("id", id)
-                .build();
+                .add("id", id);
+    }
+
+    public JsonObject toJsonObject(){
+        return toJsonObjectBuilder().build();
     }
 }
