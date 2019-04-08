@@ -7,7 +7,6 @@ import java.util.Optional;
 
 @Entity
 @NamedQuery(name="Developer.findAll", query = "select x from Developer x")
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Developer extends Employee{
     @ManyToOne
     private Team team;

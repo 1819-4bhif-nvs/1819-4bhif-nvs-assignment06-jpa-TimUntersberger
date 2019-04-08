@@ -11,16 +11,10 @@ public abstract class AbstractDao<TEntity extends BaseEntity> implements ICrudDa
     protected abstract Class<TEntity> getEntityClass();
 
     @Override
-    public void create(TEntity entity, Boolean manualFlush) {
+    public void create(TEntity entity) {
         EntityManager em = getEntityManager();
         em.persist(entity);
-        if(!manualFlush)
-            em.flush();
-    }
-
-    @Override
-    public void create(TEntity entity){
-        this.create(entity, false);
+        em.flush();
     }
 
     @Override
@@ -32,10 +26,7 @@ public abstract class AbstractDao<TEntity extends BaseEntity> implements ICrudDa
 
     @Override
     public TEntity findById(Long id) {
-        return getEntityManager()
-                .createNamedQuery(getEntityClass().getSimpleName() + ".findById", getEntityClass())
-                .setParameter("ID", id)
-                .getSingleResult();
+        return getEntityManager().find(getEntityClass(), id);
     }
 
     @Override

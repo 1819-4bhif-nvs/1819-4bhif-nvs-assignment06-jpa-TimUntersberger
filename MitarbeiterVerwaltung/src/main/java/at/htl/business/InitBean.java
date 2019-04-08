@@ -33,7 +33,12 @@ public class InitBean {
     @Inject
     VacationDao vacationDao;
 
+    private Double getRandomSalary(){
+        return Math.floor(Math.random() * 400 + 1200);
+    }
+
     public void init(@Observes @Initialized(ApplicationScoped.class) Object object){
+
         for (int i = 0; i < 3; i++) {
             char letter = (char) (65 + i);
             ProductOwner productOwner = new ProductOwner();
@@ -42,18 +47,18 @@ public class InitBean {
 
             productOwner.setFirstName("Hans " + letter);
             productOwner.setLastName("Hochberg");
-            productOwner.setSalary(Math.random() * 400 + 1200);
-            productOwnerDao.create(productOwner, true);
+            productOwner.setSalary(getRandomSalary());
+            productOwnerDao.create(productOwner);
 
             product.setProductOwner(productOwner);
-            productDao.create(product, true);
+            productDao.create(product);
 
             productOwner.setProduct(product);
             productOwnerDao.update(productOwner.getId(), productOwner);
 
             team.setProduct(product);
             team.setName("Team " + letter);
-            teamDao.create(team, true);
+            teamDao.create(team);
 
             product.setTeam(team);
             productDao.update(product.getId(), product);
@@ -62,22 +67,22 @@ public class InitBean {
             developerA.setTeam(team);
             developerA.setFirstName("Julian " + letter);
             developerA.setLastName("Nobis");
-            developerA.setSalary(Math.random() * 400 + 1200);
-            developerDao.create(developerA, true);
+            developerA.setSalary(getRandomSalary());
+            developerDao.create(developerA);
 
             Developer developerB = new Developer();
             developerB.setTeam(team);
             developerB.setFirstName("Tim " + letter);
             developerB.setLastName("Untersberger");
-            developerB.setSalary(Math.random() * 400 + 2100);
-            developerDao.create(developerB, true);
+            developerB.setSalary(getRandomSalary());
+            developerDao.create(developerB);
 
             Developer developerC = new Developer();
             developerC.setTeam(team);
             developerC.setFirstName("Stefan " + letter);
             developerC.setLastName("Waldl");
-            developerC.setSalary(Math.random() * 400 + 1200);
-            developerDao.create(developerC, true);
+            developerC.setSalary(getRandomSalary());
+            developerDao.create(developerC);
         }
     }
 

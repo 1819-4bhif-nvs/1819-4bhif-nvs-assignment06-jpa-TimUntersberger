@@ -2,13 +2,12 @@ package at.htl.database.entity;
 
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
-import javax.persistence.Entity;
-import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
 @NamedQuery(name="Employee.findAll", query = "select x from Employee x")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Employee extends BaseEntity {
     private String firstName;
     private String lastName;

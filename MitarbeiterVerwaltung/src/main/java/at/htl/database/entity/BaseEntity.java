@@ -4,7 +4,6 @@ import javax.json.Json;
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
