@@ -1,9 +1,10 @@
 package at.htl.database.entity;
 
+import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
 import javax.persistence.Entity;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
-import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -59,8 +60,19 @@ public class Employee extends BaseEntity {
 
     public void update(Employee changeset) {
         super.update(changeset);
-        setNonNull(this::setFirstName, changeset::getFirstName);
-        setNonNull(this::setLastName, changeset::getLastName);
-        setNonNull(this::setSalary, changeset::getSalary);
+        setIfPresent(this::setFirstName, changeset::getFirstName);
+        setIfPresent(this::setLastName, changeset::getLastName);
+        setIfPresent(this::setSalary, changeset::getSalary);
+    }
+
+    public JsonObjectBuilder toJsonObjectBuilder(){
+        return super.toJsonObjectBuilder()
+                .add("firstName", firstName)
+                .add("lastName", lastName)
+                .add("salary", salary);
+    }
+
+    public JsonObject toJsonObject(){
+        return toJsonObjectBuilder().build();
     }
 }

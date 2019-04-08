@@ -1,10 +1,13 @@
 package at.htl.database.entity;
 
+import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
 import javax.persistence.Entity;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import java.util.List;
+import java.util.Optional;
 
 @Entity
 @NamedQuery(name="Team.findAll", query = "select x from Team x")
@@ -50,7 +53,21 @@ public class Team extends BaseEntity {
 
     public void update(Team changeset) {
         super.update(changeset);
-        setNonNull(this::setName, changeset::getName);
-        setNonNull(this::setProduct, changeset::getProduct);
+        setIfPresent(this::setName, changeset::getName);
+        setIfPresent(this::setProduct, changeset::getProduct);
+    }
+
+    public JsonObjectBuilder toJsonObjectBuilder(){
+        return super.toJsonObjectBuilder()
+                .add("name", name)
+                .add("product_id", Optional
+                        .of(product)
+                        .map(Product::getId)
+                        .orElse(null)
+                );
+    }
+
+    public JsonObject toJsonObject(){
+        return toJsonObjectBuilder().build();
     }
 }
