@@ -2,7 +2,9 @@ package at.htl.database.entity;
 
 import at.htl.database.converter.LocalDateConverter;
 
+import javax.json.Json;
 import javax.json.JsonObjectBuilder;
+import javax.json.JsonValue;
 import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
@@ -62,10 +64,9 @@ public class Vacation extends BaseEntity{
 
     public JsonObjectBuilder toJsonObjectBuilder(){
         return super.toJsonObjectBuilder()
-                .add("employee_id", Optional
-                        .of(employee)
-                        .map(Employee::getId)
-                        .orElse(null)
+                .add("employee_id", employee == null
+                        ? JsonValue.NULL
+                        : Json.createValue(employee.getId())
                 )
                 .add("startDate", startDate.toString())
                 .add("endDate", startDate.toString());

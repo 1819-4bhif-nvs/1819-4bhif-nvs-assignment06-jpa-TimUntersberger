@@ -1,7 +1,9 @@
 package at.htl.database.entity;
 
+import javax.json.Json;
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
+import javax.json.JsonValue;
 import javax.persistence.Entity;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
@@ -47,15 +49,13 @@ public class Product extends BaseEntity{
 
     public JsonObjectBuilder toJsonObjectBuilder(){
         return super.toJsonObjectBuilder()
-                .add("team_id", Optional
-                        .of(team)
-                        .map(Team::getId)
-                        .orElse(null)
+                .add("team_id", team == null
+                        ? JsonValue.NULL
+                        : Json.createValue(team.getId())
                 )
-                .add("productOwner_id", Optional
-                        .of(productOwner)
-                        .map(ProductOwner::getId)
-                        .orElse(null)
+                .add("productOwner_id", productOwner == null
+                        ? JsonValue.NULL
+                        : Json.createValue(productOwner.getId())
                 );
     }
 

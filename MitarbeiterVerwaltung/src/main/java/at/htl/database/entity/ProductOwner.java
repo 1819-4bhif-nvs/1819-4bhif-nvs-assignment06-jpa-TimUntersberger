@@ -1,7 +1,9 @@
 package at.htl.database.entity;
 
+import javax.json.Json;
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
+import javax.json.JsonValue;
 import javax.persistence.Entity;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
@@ -36,10 +38,9 @@ public class ProductOwner extends Employee{
 
     public JsonObjectBuilder toJsonObjectBuilder(){
         return super.toJsonObjectBuilder()
-                .add("product_id", Optional
-                        .of(product)
-                        .map(Product::getId)
-                        .orElse(null)
+                .add("product_id", product == null
+                        ? JsonValue.NULL
+                        : Json.createValue(product.getId())
                 );
     }
 

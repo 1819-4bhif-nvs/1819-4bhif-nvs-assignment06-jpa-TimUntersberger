@@ -1,7 +1,6 @@
 package at.htl.database.entity;
 
-import javax.json.JsonObject;
-import javax.json.JsonObjectBuilder;
+import javax.json.*;
 import javax.persistence.*;
 import java.util.Optional;
 
@@ -33,10 +32,9 @@ public class Developer extends Employee{
 
     public JsonObjectBuilder toJsonObjectBuilder(){
         return super.toJsonObjectBuilder()
-                .add("team_id", Optional
-                        .of(team)
-                        .map(Team::getId)
-                        .orElse(null)
+                .add("team_id", team != null
+                        ? Json.createValue(team.getId())
+                        : JsonValue.NULL
                 );
     }
 
