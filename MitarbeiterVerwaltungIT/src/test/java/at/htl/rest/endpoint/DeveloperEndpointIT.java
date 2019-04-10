@@ -19,7 +19,7 @@ public class DeveloperEndpointIT {
     }
 
     @Test
-    void T01_create(){
+    void t01_create(){
         Response response = target.request("developer").get();
         String body = response.readEntity(String.class);
         System.out.println(body);

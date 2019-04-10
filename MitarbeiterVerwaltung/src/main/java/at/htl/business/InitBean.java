@@ -12,6 +12,8 @@ import javax.enterprise.event.Observes;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
+import java.util.List;
 
 @ApplicationScoped
 public class InitBean {
@@ -37,8 +39,8 @@ public class InitBean {
         return Math.floor(Math.random() * 400 + 1200);
     }
 
+    @Transactional
     public void init(@Observes @Initialized(ApplicationScoped.class) Object object){
-
         for (int i = 0; i < 3; i++) {
             char letter = (char) (65 + i);
             ProductOwner productOwner = new ProductOwner();

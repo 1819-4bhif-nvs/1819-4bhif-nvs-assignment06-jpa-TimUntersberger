@@ -1,7 +1,8 @@
 package at.htl.rest.endpoint;
 
-import at.htl.database.dao.ICrudDao;
+import at.htl.database.dao.AbstractDao;
 import at.htl.database.entity.BaseEntity;
+import at.htl.rest.adapter.AbstractAdapter;
 
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -13,12 +14,14 @@ import javax.ws.rs.core.Response;
 
 @Produces(MediaType.APPLICATION_JSON)
 public abstract class AbstractCrudEndpoint<TEntity extends BaseEntity> {
-    protected abstract ICrudDao<TEntity> getDao();
+    protected abstract AbstractDao<TEntity> getDao();
+    protected abstract AbstractAdapter<TEntity> getAdapter();
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response create(TEntity entity){
-        ICrudDao<TEntity> dao = getDao();
+    public Response create(JsonObject json){
+        AbstractDao<TEntity> dao = getDao();
+        TEntity entity = getAdapter().unmarshall(json);
         dao.create(entity);
         return Response
                 .status(Response.Status.CREATED)
@@ -31,7 +34,7 @@ public abstract class AbstractCrudEndpoint<TEntity extends BaseEntity> {
         return getDao()
                 .findAll()
                 .stream()
-                .map(BaseEntity::toJsonObject)
+                .map(getAdapter()::marshall)
                 .collect(Json::createArrayBuilder, JsonArrayBuilder::add, JsonArrayBuilder::add)
                 .build();
     }

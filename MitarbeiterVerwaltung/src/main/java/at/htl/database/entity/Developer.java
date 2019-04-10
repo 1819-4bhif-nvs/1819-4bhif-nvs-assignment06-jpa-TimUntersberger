@@ -29,16 +29,4 @@ public class Developer extends Employee{
         super.update(changeset);
         setIfPresent(this::setTeam, changeset::getTeam);
     }
-
-    public JsonObjectBuilder toJsonObjectBuilder(){
-        return super.toJsonObjectBuilder()
-                .add("team_id", team != null
-                        ? Json.createValue(team.getId())
-                        : JsonValue.NULL
-                );
-    }
-
-    public JsonObject toJsonObject(){
-        return toJsonObjectBuilder().build();
-    }
 }

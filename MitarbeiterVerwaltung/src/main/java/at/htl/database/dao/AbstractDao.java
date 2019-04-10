@@ -6,30 +6,26 @@ import at.htl.database.entity.BaseEntity;
 import javax.persistence.EntityManager;
 import java.util.List;
 
-public abstract class AbstractDao<TEntity extends BaseEntity> implements ICrudDao<TEntity> {
+public abstract class AbstractDao<TEntity extends BaseEntity> {
     protected abstract EntityManager getEntityManager();
     protected abstract Class<TEntity> getEntityClass();
 
-    @Override
     public void create(TEntity entity) {
         EntityManager em = getEntityManager();
         em.persist(entity);
         em.flush();
     }
 
-    @Override
     public List<TEntity> findAll() {
         return getEntityManager()
                 .createNamedQuery(getEntityClass().getSimpleName() + ".findAll", getEntityClass())
                 .getResultList();
     }
 
-    @Override
     public TEntity findById(Long id) {
         return getEntityManager().find(getEntityClass(), id);
     }
 
-    @Override
     public void update(Long id, TEntity changeset) {
         EntityManager em = getEntityManager();
 
@@ -39,7 +35,6 @@ public abstract class AbstractDao<TEntity extends BaseEntity> implements ICrudDa
         em.flush();
     }
 
-    @Override
     public void delete(Long id) {
         EntityManager em = getEntityManager();
         em.remove(
